@@ -1,0 +1,37 @@
+
+.suggestionedUsers{
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+.userContainer{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+.userImage{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.userNick{
+    opacity: .6;
+}
+.aside{
+    display: flex;
+    align-items: center;
+}
+.followButton{
+    padding: 6px 16px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: 1px solid #000;
+    font-weight: bold;
+    border-radius: 999px;
+}
+

@@ -1,3 +1,5 @@
+import './App.css'
+
 export default function App (){
   return(
     <section className="suggestionedUsers">
@@ -8,7 +10,7 @@ export default function App (){
           <span className="userNick">@adolexente</span>
         </div>
       </header>
-      <aside>
+      <aside className="aside">
         <button className="followButton">Follow</button>
       </aside>
     </section>
