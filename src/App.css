@@ -34,4 +34,14 @@
     font-weight: bold;
     border-radius: 999px;
 }
+.following{
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+}
+.following:hover{
+    border: 1px solid red;
+    color: red;
+    background: none;
+}
 
