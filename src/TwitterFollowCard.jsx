@@ -11,7 +11,7 @@ export function TwitterFollowCard({name, nick, initialIsFollowing}){
   }
 
   return(
-    <section className="suggestionedUsers">
+    <section className="suggestedUsers">
       <header className="userContainer">
         <img className="userImage" alt="User avatar" src={`https://unavatar.io/${nick}`}  />
         <div className="userInfo">
