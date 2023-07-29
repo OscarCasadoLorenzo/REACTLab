@@ -44,4 +44,13 @@
     color: red;
     background: none;
 }
+.following:hover .followingSpan{
+    display: none;
+}
+.unfollowSpan{
+    display: none;
+}
+.following:hover .unfollowSpan{
+    display: block;
+}
 
