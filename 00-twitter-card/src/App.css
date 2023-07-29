@@ -1,8 +1,20 @@
-
-.suggestedUsers{
+.cardTitle{
+    color: #fff;
+    font-size: 20px;
+    padding: 6px 16px 6px 16px;
+    margin: 0;
+}
+.suggestedUser{
     display: flex;
     justify-content: space-between;
     font-size: .8rem;
+    background-color: #16181c;
+    padding: 6px 16px 6px 16px;
+
+    transition: background-color .2s linear;
+}
+.suggestedUser:hover{
+    background-color: rgb(41, 42, 42);
 }
 .userContainer{
     display: flex;
@@ -14,10 +26,26 @@
     height: 48px;
     border-radius: 100%;
 }
+.userImage:hover{
+    cursor: pointer;
+}
 .userInfo{
     display: flex;
     flex-direction: column;
     color: #fff;
+    padding-left: 6px;
+}
+.nameAndBandageContainer{
+    display: flex;
+}
+.userName:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.accountBandage{
+    width: 16px;
+    height: 16px;
+    padding-left: 3px;
 }
 .userNick{
     opacity: .6;
@@ -53,4 +81,10 @@
 .following:hover .unfollowSpan{
     display: block;
 }
-
+.showMore{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 12px;
+    margin: 10px 0 20px 0;
+    padding: 6px 16px 6px 16px;
+}

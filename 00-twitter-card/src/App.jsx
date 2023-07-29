@@ -5,12 +5,14 @@ const suggestedUsersData = [
   {
     'name': 'Ibai LLanos',
     'nick':'ibailLanos',
-    'initialIsFollowing': false
+    'initialIsFollowing': false,
+    'accountType': 'verified'
   },
   {
     'name': 'Marco Creativo',
     'nick':'marcoCreativo',
-    'initialIsFollowing': true
+    'initialIsFollowing': true,
+    'accountType': 'business'
   },
   {
     'name': 'Pedro Buerbaum',
@@ -22,17 +24,21 @@ const suggestedUsersData = [
 export default function App (){
   return(
     <section className='App'>
+      <h2 className='cardTitle'>Who to follow</h2>
       {
         suggestedUsersData.map(user => {
           return(
             <TwitterFollowCard
+              key={user.name}
               name={user.name}
               nick={user.nick}
-              initialIsFollowing={user.initialIsFollowing}/>
+              initialIsFollowing={user.initialIsFollowing}
+              accountType={user.accountType}
+            />
           )
         })
       }
-      
+      <a className='showMore' href='#'>Show more</a>
     </section>
   )
 }
