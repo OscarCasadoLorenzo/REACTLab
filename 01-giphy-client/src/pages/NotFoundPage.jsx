@@ -1,7 +1,5 @@
-import {Navigate} from 'react-router-dom'
+import { Navigate } from "react-router-dom";
 
-export function NotFoundPage(){
-    return(
-        <Navigate to='/' />
-    )
+export function NotFoundPage() {
+  return <Navigate to="/" />;
 }

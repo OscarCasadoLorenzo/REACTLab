@@ -3,17 +3,17 @@
   --gridList-rows: 250px;
   --gridList-gap: 6px;
 }
-.navbar{
+.navbar {
   width: 100%;
   background-color: cadetblue;
   margin: 0 !important;
   display: flex;
   justify-content: space-between;
 }
-.searchBox{
+.searchBox {
   display: flex;
 }
-.giftsContainer{
+.giftsContainer {
   display: grid;
   min-height: 100vh;
   grid-template-columns: repeat(auto-fit, minmax(var(--gridList-column), 1fr));
@@ -25,19 +25,19 @@
   align-items: center;
 }
 
-.singleGifContainer{
+.singleGifContainer {
   position: relative;
   overflow: hidden;
 }
-.gif{
+.gif {
   width: 100%;
   object-fit: contain;
 }
-.gifTitle{
+.gifTitle {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-weight: bold;
 }
