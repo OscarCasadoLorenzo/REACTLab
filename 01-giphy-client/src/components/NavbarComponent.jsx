@@ -1,6 +1,4 @@
-import { useState } from "react"
-
-export function Navbar(){
+export function NavbarComponent(){
   
   return(
     <nav className="navbar">

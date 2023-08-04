@@ -1,9 +1,10 @@
 import { useRoutes } from "react-router-dom";
-import HomePage from '../pages/HomePage'
-import NavbarComponent from '../components/NavbarComponent'
+import {HomePage} from '../pages/HomePage'
+import {NavbarComponent} from '../components/NavbarComponent'
+import {NotFoundPage} from '../pages/NotFoundPage'
 
 export default function Router() {
-    let element = useRoutes([
+    const element = useRoutes([
         {
             path: "/", 
             element: <NavbarComponent />,

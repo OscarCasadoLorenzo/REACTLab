@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import fetchGifs from '../services/fetchGifs'
 
-export function Home(){
+export function HomePage(){
     const [gifs, setGifs] = useState([])
     const [query, setQuery] = useState('')
 
