@@ -10,7 +10,7 @@ export default function Router() {
   const element = useRoutes([
     {
       path: "/",
-      element: <NavbarComponent setGifs={setGifs()} />,
+      element: <NavbarComponent setGifs={setGifs} />,
       children: [
         {
           index: true,

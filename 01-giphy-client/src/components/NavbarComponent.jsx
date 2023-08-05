@@ -3,15 +3,11 @@ import fetchGifs from "../services/fetchGifs";
 import { useEffect } from "react";
 
 export function NavbarComponent(props) {
-  useEffect(
-    function () {
-      fetchGifs("default").then((gifs) => {
-        console.log("Default gifs:" + gifs);
-        props.setGifs(gifs);
-      });
-    },
-    [props]
-  );
+  useEffect(function () {
+    fetchGifs("default").then((gifs) => {
+      props.setGifs(gifs);
+    });
+  }, []);
 
   return (
     <>
@@ -37,7 +33,6 @@ export function NavbarComponent(props) {
             type="text"
             placeholder="Search"
             onChange={(event) => {
-              console.log(event.target.value);
               fetchGifs(event.target.value).then((gifts) =>
                 props.setGifs(gifts)
               );
