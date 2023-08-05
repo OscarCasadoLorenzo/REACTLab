@@ -1,14 +1,5 @@
-import { useEffect, useState } from "react";
-import fetchGifs from "../services/fetchGifs";
+import { GifListComponent } from "../components/GifListComponent";
 
-export function HomePage() {
-  const [gifs, setGifs] = useState([]);
-
-  useEffect(
-    function () {
-      fetchGifs("rick and morty").then((gifs) => setGifs(gifs));
-      console.log({ gifs });
-    },
-    [gifs]
-  );
+export function HomePage(props) {
+  return <GifListComponent gifs={props.gifs} />;
 }
